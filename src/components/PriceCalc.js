@@ -7,12 +7,9 @@ class PriceCalc extends React.Component {
         this.state ={
             numOne: Number,
             NumTwo: Number,
-            answer: Number
+            answer: []
         }
     }
-
-    handleFormSubmit = (e) => {
-        e.preventDefault();
 
     render() {
         return(
