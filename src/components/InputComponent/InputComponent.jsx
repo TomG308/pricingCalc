@@ -8,7 +8,13 @@ class inputComponent extends Component {
           <form onSubmit={this.props.handleFormSubmit}>
             <label htmlFor="username">
             Username:
-            <input id="username" value={this.props.newUsername} type="text" name="username" onChange={this.props.handleInputChange} />
+            <input 
+              id="username" 
+              value={this.props.newUsername} 
+              type="text" 
+              name="username" 
+              onChange={this.props.handleInputChange} 
+            />
             </label>
             <button type="submit" value="Submit">Add Item</button>
           </form>
