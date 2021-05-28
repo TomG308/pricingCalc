@@ -3,16 +3,17 @@ import React, { Component } from 'react';
 class inputComponent extends Component {
     render() {
       return (
-        <div id="Form">
+        <div>
+          <h2>Ho1 form component</h2>
           <h3>Add a new item to the table:</h3>  
           <form onSubmit={this.props.handleFormSubmit}>
             <label htmlFor="username">
-            Username:
+            User input:
             <input 
-              id="username" 
-              value={this.props.newUsername} 
+              id="userInput" 
+              value={this.props.newUserInput} 
               type="text" 
-              name="username" 
+              name="userInput" 
               onChange={this.props.handleInputChange} 
             />
             </label>

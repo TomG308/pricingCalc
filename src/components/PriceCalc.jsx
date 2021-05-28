@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import InputComponent from './InputComponent/InputComponent.jsx'
+import InputComponent from './InputComponent/formComponent.jsx'
 import TableComponent from './TableComponent/TableComponent.jsx'
 
 class priceCalc extends Component {
@@ -19,7 +19,7 @@ class priceCalc extends Component {
     
         let items = [...this.state.items];
     
-        items.push({username: this.state.username});
+        items.push({userInput: this.state.userInput});
     
         this.setState({
             items,
@@ -37,21 +37,6 @@ class priceCalc extends Component {
         })
       };
 
-    // render() {
-    //     return(
-    //         <div>
-    //             <h2>H0i! priceCalc component</h2>
-    //         <form>
-    //             <label>
-    //                 testName:
-    //                 <input type="text" name="name" />
-    //             </label>
-    //             <input type="submit" value="submit" />    
-    //         </form>
-    //         </div>
-    //     )
-    // }
-
     render() {
         return (
           <div className>
@@ -59,7 +44,7 @@ class priceCalc extends Component {
             <InputComponent 
               handleFormSubmit={ this.handleFormSubmit } 
               handleInputChange={ this.handleInputChange } 
-              newUsername={ this.state.username } 
+              newUserInput={ this.state.userInput } 
             />
             <TableComponent items={ this.state.items }/>
           </div>

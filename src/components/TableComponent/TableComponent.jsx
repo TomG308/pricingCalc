@@ -6,14 +6,15 @@ class TableComponent extends Component {
         const items = this.props.items;
         return (
             <div>
+                <h2>Ho1 table component</h2>
             <table>
             <tr>
-            <th>Username</th>
+            <th>User Input</th>
             </tr>
             {items.map(item => {
                 return (
                     <tr>
-                    <td>{item.username}</td>
+                    <td>{item.userInput}</td>
                     </tr>
                 );
             })}
